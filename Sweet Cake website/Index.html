@@ -23,7 +23,20 @@
                 <li><a href="#custom">Custom Orders</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-           
+            <div class="nav-icons">
+                <button id="cart-btn" class="icon-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </button>
+                 <button id="theme-toggle" class="icon-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+                 <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
         </nav>
     </header>
 
@@ -45,7 +58,7 @@
             <h2 class="section-title">Our Story</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Welcome to Sweet Delights, where we've been crafting delicious, beautiful cakes for over 15 years. Our passion is turning special moments into unforgettable memories with our artisanal creations.</p>
+                    <p>Welcome to Sweet Cake, where we've been crafting delicious, beautiful cakes for over 15 years. Our passion is turning special moments into unforgettable memories with our artisanal creations.</p>
                     <p>We use only the finest ingredients, sourced locally whenever possible, to ensure every bite is as delightful as the last.</p>
                     <div class="features">
                         <div class="feature">
@@ -74,7 +87,13 @@
         <div class="container">
             <h2 class="section-title">Our Cakes</h2>
             <p class="section-subtitle">Choose from our delicious selection or order a custom creation</p>
-      
+            
+            <div class="category-filter">
+                <button class="filter-btn active" data-filter="all">All Cakes</button>
+                <button class="filter-btn" data-filter="birthday">Birthday</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="specialty">Specialty</button>
+            </div>
             
             <div class="cakes-grid">
                 <!-- Cakes will be populated by JavaScript -->
@@ -154,7 +173,7 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <h3><i class="fas fa-birthday-cake"></i> Sweet Cake</h3>
-                    <p>Creating sweet memories since 2008</p>
+                    <p>Creating sweet memories since 2015</p>
                 </div>
                 <div class="footer-links">
                     <h4>Quick Links</h4>
@@ -173,6 +192,12 @@
                         <a href="#"><i class="fab fa-pinterest"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
+
+                    <p>Subscribe to our newsletter for sweet updates!</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email address">
+                        <button class="btn-small">Subscribe</button>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -181,6 +206,28 @@
         </div>
     </footer>
 
+    <!-- Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items">
+                    <!-- Cart items will be populated by JavaScript -->
+                    <p class="empty-cart">Your cart is empty</p>
+                </div>
+                <div class="cart-total">
+                    <h4>Total: $<span id="cart-total">0.00</span></h4>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline" id="close-cart">Continue Shopping</button>
+                <button class="btn" id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Order Success Modal -->
