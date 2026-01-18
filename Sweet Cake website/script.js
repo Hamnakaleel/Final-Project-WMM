@@ -32,6 +32,26 @@ const cakes = [
         category: "wedding",
         image: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
     },
+
+    {
+        id: 5,
+        name: "Strawberry Shortcake",
+        description: "Light sponge cake with fresh strawberries and cream",
+        price: 38.25,
+        category: "specialty",
+        image: "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+    },
+
+      {
+        id: 6,
+        name: "Luxury Wedding Cake",
+        description: "Five-tiered masterpiece with gold leaf accents",
+        price: 450.00,
+        category: "wedding",
+        image: "https://images.unsplash.com/photo-1532117182044-031e7cd916ee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=780&q=80"
+    },
+     
+    
     
 ];
 
@@ -465,4 +485,5 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             });
         }
     });
+
 });
